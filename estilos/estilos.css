@@ -1,0 +1,89 @@
+/* *** Funciones *** */
+/* *** Globales *** */
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2F2439;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: calc(1.5em + 1.5vw);
+}
+
+/* *** Utilidades *** */
+/* *** estilos *** */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90vh;
+}
+
+.contenedor-cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 95vw;
+  padding: 0;
+}
+.contenedor-cuenta .cuenta {
+  margin-right: 1rem;
+}
+.contenedor-cuenta .cuenta:last-of-type {
+  margin: 0;
+}
+
+.cuenta {
+  text-align: center;
+  text-transform: capitalize;
+}
+.cuenta .cuadro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vmax;
+  width: 10vmax;
+  background-color: #1e1f29;
+  font-size: calc(1.9em + 1.9vw);
+}
+.cuenta .cuadro p {
+  font-family: inherit;
+  color: #fb6087;
+}
+.cuenta span {
+  margin-top: 20px;
+  font-family: monospace;
+  color: #8486a9;
+}
+
+.redes {
+  align-self: center;
+}
+.redes a {
+  margin-right: 20px;
+  font-size: 25px;
+  color: white;
+  transition: all 0.4s ease;
+}
+.redes a:hover {
+  color: #fb6087;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,85 @@
+@import "componentes/colores";
+/* *** Funciones *** */
+@mixin bothsize($size) {
+    height: $size;
+    width: $size;
+}
+/* *** Globales *** */
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2F2439;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.6rem;
+}
+h1{
+    color: $White;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: calc(1.5em + 1.5vw);
+}
+/* *** Utilidades *** */
+/* *** estilos *** */
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+}
+.contenedor-cuenta{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 95vw;
+    padding: 0;
+    .cuenta{
+        margin-right:1rem ;
+        &:last-of-type{
+            margin: 0;
+        }
+    }
+}
+.cuenta{
+    text-align: center;
+    text-transform: capitalize;
+    .cuadro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include bothsize(10vmax);
+        background-color: $Verydarkblue;
+        font-size: calc(1.9em + 1.9vw);
+        p{
+            font-family: inherit;
+            color: $Softred;
+        }
+    }
+    span{
+        margin-top: 20px;
+        font-family: monospace;
+        color: $Grayishblue;
+    }
+}
+.redes{
+    align-self: center;
+    a{
+        margin-right: 20px;
+        font-size: 25px;
+        color: $White;
+        transition: all .4s ease;
+        &:hover{
+            color: $Softred;
+        }
+    }
+}
