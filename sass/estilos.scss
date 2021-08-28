@@ -25,9 +25,9 @@ h1{
     text-align: center;
     font-family: monospace;
     text-transform: uppercase;
-    font-size: calc(1.5em + 1.5vw);
+    font-size: calc(1em + 1vw);
 }
-/* *** Utilidades *** */
+
 /* *** estilos *** */
 .contenedor{
     display: flex;
@@ -40,7 +40,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 2rem auto;
     width: 95vw;
     padding: 0;
     .cuenta{
@@ -66,7 +66,7 @@ h1{
         }
     }
     span{
-        margin-top: 20px;
+        margin-top: 3rem;
         font-family: monospace;
         color: $Grayishblue;
     }
@@ -74,8 +74,8 @@ h1{
 .redes{
     align-self: center;
     a{
-        margin-right: 20px;
-        font-size: 25px;
+        margin-right: 2rem;
+        font-size: 2rem;
         color: $White;
         transition: all .4s ease;
         &:hover{
